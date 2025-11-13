@@ -1,0 +1,148 @@
+/* fonts styles */
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* shared styles */
+.button {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    padding: 10px 60px;
+    cursor: pointer;
+}
+
+/* fonts color */
+.orange {
+    color: #FEA301;
+}
+
+.sky-blue {
+    color: #01ACFD;
+}
+
+.terq {
+    color: #05D4DF;
+}
+
+.purple {
+    color: #5D58EF;
+}
+
+.black {
+    color: #111111;
+}
+
+/* nav styles */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.25rem auto;
+    width: 95%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    height: 62px;
+    width: 62px;
+}
+
+.brand h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    margin-left: .75rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+}
+
+.org-btn {
+    background-color: #FEA301;
+}
+
+/* banner styles */
+.banner-container {
+    width: 30%;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.banner h3 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: black;
+    margin: 24px auto;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 576px) {
+
+    nav,
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 1rem;
+        border-bottom: 1px solid #FEA301;
+        padding: 1rem;
+    }
+
+    .banner-container {
+        text-align: center;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner h3 {
+        font-size: 2rem;
+        line-height: auto;
+    }
+
+    .banner p {
+        font-size: 0.8 rem;
+        line-height: auto;
+    }
+
+    .banner-container {
+        width: auto;
+    }
+}
