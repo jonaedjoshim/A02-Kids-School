@@ -22,6 +22,39 @@
     cursor: pointer;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* id styles */
+
+#blue-a {
+    color: #64C8FF;
+}
+
+#yellow-a {
+    color: #F0AA00;
+}
+
+#violet-a {
+    color: #8700FF;
+}
+
+#blue {
+    background: linear-gradient(to bottom, rgba(222, 245, 255, 1) 0%, rgba(255, 255, 255, 0) 40%);
+    border: 1px solid rgba(222, 245, 255, 1);
+}
+#yellow {
+    background: linear-gradient(to bottom, rgba(255, 244, 220, 1) 0%, rgba(255, 255, 255, 0) 40%);
+    border: 1px solid rgba(255, 244, 220, 1);
+}
+#violet {
+    background: linear-gradient(to bottom, rgba(238, 225, 255, 1) 0%, rgba(255, 255, 255, 0) 40%);
+    border: 1px solid rgba(238, 225, 255, 1);
+}
+
 /* fonts color */
 .orange {
     color: #FEA301;
@@ -114,6 +147,61 @@ nav ul {
     margin: 24px auto;
 }
 
+/* Standard Curriculum section */
+
+.sc-head {
+    margin: 60px auto 80px;
+}
+
+.sc {
+    font-weight: bold;
+    font-size: 2.85rem;
+    color: #000000;
+}
+
+/* sc shared cards design */
+.sc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+    margin: auto;
+}
+
+.card {
+    border-radius: 19px;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+    padding: 53px 41px;
+    width: 23rem;
+}
+
+.card h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #202020;
+
+}
+
+.card p {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: #808080;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
 /* responsive design */
 
 @media screen and (max-width: 576px) {
@@ -150,7 +238,7 @@ nav ul {
     }
 
     .banner p {
-        font-size: 0.8 rem;
+        font-size: 0.8rem;
         line-height: auto;
     }
 
